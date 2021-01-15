@@ -8,7 +8,7 @@ async function createproject() {
     githublink: "https://www.producthunt.com/",
     deploylink:
       "https://www.notion.so/Product-Brief-b65e74d1949d4b169e9c51e0884c8d9e",
-    upvote: 1500,
+    upvote: 150000000,
     downvote: 500,
   });
   project1.save();
