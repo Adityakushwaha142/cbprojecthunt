@@ -24,7 +24,8 @@
 </head>
 
 <body>
-
+    <h1>{{project1.devloper}}</h1>
+    <h1>{{project1.title}}</h1>
     <div class="container">
         <header class="blog-header py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
@@ -51,15 +52,14 @@
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
 
+
                 <form action="/">
 
                     <button class="btn btn-lg btn-outline-secondary" type="submit"> Home
 
                     </button>
                 </form>
-
                 <form action="/trending">
-
 
                     <button class="btn btn-lg btn-outline-secondary" type="submit"> Trending
 
@@ -85,23 +85,18 @@
 
 
                 </form>
-                <form action="/Profile">
-                    <button class="btn btn-lg btn-outline-secondary" type="submit"> Profile
-
-                    </button>
-
-
-                </form>
-                <a class="p-2 text-muted" href="#">Culture</a>
-                <a class="p-2 text-muted" href="#">Business</a>
-                <a class="p-2 text-muted" href="#">Politics</a>
-                <a class="p-2 text-muted" href="#">Opinion</a>
 
             </nav>
         </div>
 
 
         {{!-- TRENDING NO.1 --}}
+
+
+        <h1 class="text-center text-secondary">ALL PROJECTS</h1>
+
+
+
         <div class="trending">
             a
         </div>
@@ -123,7 +118,7 @@
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="/js/index.js"></script>
+        <script src="/js/allprojects.js"></script>
         <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
         <script src="../../assets/js/vendor/popper.min.js"></script>
         <script src="../../dist/js/bootstrap.min.js"></script>

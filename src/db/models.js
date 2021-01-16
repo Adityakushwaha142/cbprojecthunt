@@ -19,6 +19,7 @@ const user = mongoose.model("user", userschema);
 
 const projectschema = new mongoose.Schema({
   name: String,
+  devloper: String,
   title: {
     type: String,
     required: true,

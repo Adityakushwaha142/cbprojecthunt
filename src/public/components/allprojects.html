@@ -25,6 +25,15 @@
 
 <body>
 
+
+
+    <h1>
+        {{title}}
+    </h1>
+    <h1>
+        {{description}}
+    </h1>
+    <h1>{{youtubelink}}</h1>
     <div class="container">
         <header class="blog-header py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
@@ -50,58 +59,29 @@
 
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
-
-                <form action="/">
-
-                    <button class="btn btn-lg btn-outline-secondary" type="submit"> Home
-
-                    </button>
-                </form>
-
-                <form action="/trending">
-
-
-                    <button class="btn btn-lg btn-outline-secondary" type="submit"> Trending
-
-                    </button>
-                </form>
-                <form action="/create">
-                    <button class="btn btn-lg btn-outline-secondary" type="submit"> Create
-
-                    </button>
-
-
-                </form>
-                <form action="/technology">
-                    <button class="btn btn-lg btn-outline-secondary" type="submit"> Technology
-
-                    </button>
-
-                </form>
-                <form action="/popular">
-                    <button class="btn btn-lg btn-outline-secondary" type="submit"> Popular
-
-                    </button>
-
-
-                </form>
-                <form action="/Profile">
-                    <button class="btn btn-lg btn-outline-secondary" type="submit"> Profile
-
-                    </button>
-
-
-                </form>
+                <a class="p-2 text-muted trendingbtn" href="">Trending</a>
+                <a class="p-2 text-muted" href="#">U.S.</a>
+                <a class="p-2 text-muted" href="#">Technology</a>
+                <a class="p-2 text-muted" href="#">Design</a>
                 <a class="p-2 text-muted" href="#">Culture</a>
                 <a class="p-2 text-muted" href="#">Business</a>
                 <a class="p-2 text-muted" href="#">Politics</a>
                 <a class="p-2 text-muted" href="#">Opinion</a>
-
+                <a class="p-2 text-muted" href="#">Science</a>
+                <a class="p-2 text-muted" href="#">Health</a>
+                <a class="p-2 text-muted" href="#">Style</a>
+                <a class="p-2 text-muted" href="#">Travel</a>
             </nav>
         </div>
 
 
         {{!-- TRENDING NO.1 --}}
+
+
+        <h1 class="text-center text-secondary">ALL PROJECTS</h1>
+
+
+
         <div class="trending">
             a
         </div>
