@@ -1,16 +1,26 @@
 const { project } = require("../db/models");
-async function createproject() {
+
+/* async function createproject() {
   const project1 = new project({
     name: "project",
-    title: "My first  project",
-    description: "MY FIRST DESCRIPZTION ",
-    youtubelink: "https://www.youtube.com/watch?v=DZC7zzgtPwM",
-    githublink: "https://www.producthunt.com/",
-    deploylink:
-      "https://www.notion.so/Product-Brief-b65e74d1949d4b169e9c51e0884c8d9e",
-    upvote: 150000000,
-    downvote: 500,
+    devloper: req.body.devloper,
+    title: req.body.title,
+    description: req.body.description,
+    youtubelink: req.body.youtubelink,
+    githublink: req.body.githublink,
+    deploylink: req.body.deploylink,
   });
   project1.save();
 }
 createproject();
+ */
+async function upadate(id) {
+  const projects = await project.findByIdAndUpdate(
+    { _id: id },
+    {
+      $inc: { upvote: 1 },
+    }
+  );
+  console.log("sucessfully updated");
+}
+upadate("600466399981064d50aae51a");
