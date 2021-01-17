@@ -15,7 +15,7 @@ $(() => {
         <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
 
         <div class="mr-4 mt-4 ml-4 ">
-        <button id=${p._id} class="btn btn-sm btn-outline-secondary upvotebtn" >Upvote:  ${p.upvote}
+        <button id="upvotebtn" /*id=${p._id}*/ class="btn btn-sm btn-outline-secondary" >Upvote:  ${p.upvote}
 
         </button>
         </div>
@@ -39,7 +39,7 @@ $(() => {
                   <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
                       alt="Card image cap">
                       <div class="mr-4 mt-4 ml-4 ">
-                      <button onclick="click()"  id=${p._id} class="btn btn-sm btn-outline-secondary upvotebtn" >Upvote:  ${p.upvote}
+                      <button id="upvotebtn"  /* id=${p._id} */ class="btn btn-sm btn-outline-secondary" >Upvote:  ${p.upvote}
 
                       </button>
                       </div>
