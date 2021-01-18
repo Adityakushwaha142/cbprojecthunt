@@ -1,22 +1,29 @@
 const Router = require("express");
+/* const { loadallprojects } = require("../public/js/allprojects"); */
 const route = Router();
 const { project } = require("../db/models");
 route.get("/", async (req, res) => {
-  const projects = await project.find({});
+  const projects = await project.find({}).sort({ upvote: -1 });
 
   res.status(200).send(projects);
 });
 route.post("/", async (req, res) => {
+  console.log("before req.body");
   console.log(req.body);
-  const { id } = req.body;
+  console.log(req.body.Id);
+  console.log(" in the routes loop");
+  const { Id } = req.body;
+  console.log(Id);
+  console.log("completed");
 
   const projects = await project.findByIdAndUpdate(
-    { _id: id },
+    { _id: Id },
     {
       $inc: { upvote: 1 },
     }
   );
-  console.log("sucessfully updated");
+  console.log("sucessfully updated in tje rputes ");
+  /* loadallprojects(); */
 });
 /* async function upadate(id) {
   const projects = await project.findByIdAndUpdate(

@@ -24,6 +24,9 @@ app.use("/api/projects", projectroute);
 app.get("/create", (req, res) => {
   res.render("create.hbs");
 });
+app.get("/projects", (req, res) => {
+  res.render("allprojects.hbs");
+});
 
 app.post("/create", async (req, res) => {
   console.log(req.body);
@@ -42,7 +45,7 @@ app.post("/create", async (req, res) => {
   });
   project1.save();
 
-  res.render("allprojects");
+  res.redirect("/projects");
 });
 
 app.listen(PORT, () => {

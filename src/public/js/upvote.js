@@ -1,3 +1,5 @@
-$("#upvotebtn").click(() => {
-  console.log("apple");
+console.log("apple");
+
+$("#hello").click(() => {
+  alert("hello world");
 });
